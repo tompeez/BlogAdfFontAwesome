@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="index.jsf" id="d1">
+        <af:form id="f1">
+            <af:panelGridLayout id="pgl1">
+                <af:gridRow height="50px" id="gr2">
+                    <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc1">
+                        <!-- Header -->
+                        <af:outputText value="ADF FontAwesome Integration" id="ot1" inlineStyle="font-size:x-large;"/>
+                    </af:gridCell>
+                </af:gridRow>
+                <af:gridRow height="100%" id="gr1">
+                    <af:gridCell halign="stretch" valign="stretch" id="gc2">
+                        <!-- Content -->
+                        <af:panelGroupLayout id="pgl2" width="400px" layout="vertical">
+                            <af:panelBox text="af:outputText" id="pb1">
+                                <af:panelGroupLayout id="pgl3" layout="vertical">
+                                    <af:outputText value="icon before the text" id="ot2" styleClass="ambulanz_before"
+                                                   inlineStyle="font-size:x-large;"/>
+                                    <af:outputText value="icon after hhe text" id="ot3" styleClass="ambulanz_after"
+                                                   inlineStyle="font-size:x-large;"/>
+                                </af:panelGroupLayout>
+                                <f:facet name="toolbar"/>
+                            </af:panelBox>
+                            <af:panelBox text="af:button" id="pb2">
+                                <af:panelGroupLayout id="pgl4" layout="vertical">
+                                    <af:button text="mail_before_text" id="b1" styleClass="mail_before_text"
+                                               inlineStyle="font-size:x-large;" icon="/images/small-gear.png"/>
+                                    <af:button text="mail_before_icon" id="b2" styleClass="mail_before_icon"
+                                               inlineStyle="font-size:x-large;" icon="/images/small-gear.png"/>
+                                </af:panelGroupLayout>
+                                <f:facet name="toolbar"/>
+                            </af:panelBox>
+                            <af:panelBox text="af:checkbox" id="pb6">
+                                <af:panelGroupLayout id="pgl7">
+                                    <af:selectBooleanCheckbox text="do you want mail?" label="Label 1" id="sbc1"
+                                                              styleClass="bigcheckbox"/>
+                                    <af:selectBooleanCheckbox text="ON/OFF switch" label="Label 2" id="sbc2"
+                                                              styleClass="bigswitch"/>
+                                </af:panelGroupLayout>
+                                <f:facet name="toolbar"/>
+                            </af:panelBox>
+                        </af:panelGroupLayout>
+                    </af:gridCell>
+                    <af:gridCell id="gc3">
+                        <af:panelGroupLayout id="pgl9" layout="vertical">
+                            <af:panelBox text="af:icon" id="pb3">
+                                <af:panelGroupLayout id="pgl6" layout="vertical">
+                                    <af:panelLabelAndMessage label="af:icon with icon before" id="plam1">
+                                        <af:icon id="i1" styleClass="ambulanz_before" name="error"/>
+                                    </af:panelLabelAndMessage>
+                                    <af:panelLabelAndMessage label="af:icon with icon after" id="plam2">
+                                        <af:icon id="i2" styleClass="ambulanz_after" name="error"/>
+                                    </af:panelLabelAndMessage>
+                                </af:panelGroupLayout>
+                                <f:facet name="toolbar"/>
+                            </af:panelBox>
+                            <af:panelBox text="af:link" id="pb4">
+                                <af:panelGroupLayout id="pgl5" layout="vertical">
+                                    <af:link text="this is a link (icon before)" id="l1" styleClass="ambulanz_before"/>
+                                    <af:link text="this is a link (Icon after)" id="l2" styleClass="ambulanz_after"/>
+                                </af:panelGroupLayout>
+                                <f:facet name="toolbar"/>
+                            </af:panelBox>
+                            <af:panelBox text="af:panelBox with special disclose/undisclose icon" id="pb5"
+                                         styleClass="ambulanz_before_x">
+                                <f:facet name="toolbar"/>
+                                <af:panelGroupLayout id="pgl8">
+                                    <af:outputText value="outputText1" id="ot4"/>
+                                </af:panelGroupLayout>
+                            </af:panelBox>
+                        </af:panelGroupLayout>
+                    </af:gridCell>
+                </af:gridRow>
+            </af:panelGridLayout>
+        </af:form>
+    </af:document>
+</f:view>

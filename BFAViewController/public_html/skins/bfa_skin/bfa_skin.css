@@ -1,0 +1,263 @@
+@charset "UTF-8";
+
+/**ADFFaces_Skin_File / DO NOT REMOVE**/
+@namespace af "http://xmlns.oracle.com/adf/faces/rich";
+@namespace dvt "http://xmlns.oracle.com/dss/adf/faces";
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('/skins/bfa_skin/fontawesome-free-5.14.0/webfonts/fa-brands-400.eot');
+    src: url('/skins/bfa_skin/fontawesome-free-5.14.0/webfonts/fa-brands-400.svg');
+    src: url('/skins/bfa_skin/fontawesome-free-5.14.0/webfonts/fa-brands-400.ttf');
+    src: url('/skins/bfa_skin/fontawesome-free-5.14.0/webfonts/fa-brands-400.woff');
+    src: url('/skins/bfa_skin/fontawesome-free-5.14.0/webfonts/fa-brands-400.woff2');
+    src: url('/skins/bfa_skin/fontawesome-free-5.14.0/webfonts/fa-regular-400.eot');
+    src: url('/skins/bfa_skin/fontawesome-free-5.14.0/webfonts/fa-regular-400.svg');
+    src: url('/skins/bfa_skin/fontawesome-free-5.14.0/webfonts/fa-regular-400.ttf');
+    src: url('/skins/bfa_skin/fontawesome-free-5.14.0/webfonts/fa-regular-400.woff');
+    src: url('/skins/bfa_skin/fontawesome-free-5.14.0/webfonts/fa-regular-400.woff2');
+    src: url('/skins/bfa_skin/fontawesome-free-5.14.0/webfonts/fa-solid-900.eot');
+    src: url('/skins/bfa_skin/fontawesome-free-5.14.0/webfonts/fa-solid-900.svg');
+    src: url('/skins/bfa_skin/fontawesome-free-5.14.0/webfonts/fa-solid-900.ttf');
+    src: url('/skins/bfa_skin/fontawesome-free-5.14.0/webfonts/fa-solid-900.woff');
+    src: url('/skins/bfa_skin/fontawesome-free-5.14.0/webfonts/fa-solid-900.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ambulanz_before:before {
+    content: "\f0f9";
+    font-family: FontAwesome;
+    padding-right: 5px;
+}
+
+.ambulanz_before_x af|panelBox::header-element:before {
+    content: "\f0f9";
+    font-family: FontAwesome;
+    padding-right: 5px;
+}
+
+.ambulanz_before_x af|panelBox::undisclosed-icon-style {
+    width: 0;
+    height: 0;
+    display: inline-block;
+}
+
+.ambulanz_before_x af|panelBox::undisclosed-icon-style:after {
+    content: "\f101";
+    font-family: FontAwesome;
+    padding-right: 5px;
+}
+
+.ambulanz_before_x af|panelBox::disclosed-icon-style {
+    width: 0;
+    height: 0;
+    display: inline-block;
+}
+
+.ambulanz_before_x af|panelBox::disclosed-icon-style:after {
+    content: "\f103";
+    font-family: FontAwesome;
+    padding-right: 5px;
+}
+
+.ambulanz_after:after {
+    content: "\f0f9";
+    font-family: FontAwesome;
+    padding-left: 5px;
+}
+
+.mail_before:before {
+    content: "\f199";
+    font-family: FontAwesome;
+    padding-right: 5px;
+}
+
+.mail_after:after {
+    content: "\f199";
+    font-family: FontAwesome;
+    padding-left: 5px;
+}
+
+.mail_before_icon af|button::link:before {
+    content: "\f199";
+    font-family: FontAwesome;
+    padding-right: 5px;
+}
+
+.mail_before_text af|button::text:before {
+    content: "\f199";
+    font-family: FontAwesome;
+    padding-right: 5px;
+}
+/*------------------------------------------------------*/
+/* BIGCHECKBOX */
+/**hide checkbox*/
+.bigcheckbox af|selectBooleanCheckbox::virtual-checkbox {
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+}
+
+.bigcheckbox input[type="checkbox"] {
+    opacity: 0;
+    width: 0px;
+}
+/*style label to display checkbox*/
+.bigcheckbox .p_OraHiddenLabel {
+    position: relative;
+    left: inherit;
+    font-size: 21px;
+    top: 4px;
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 17px;
+    height: 17px;
+    left: inherit;
+    margin-left: 0px;
+    border: 1px solid rgb(133, 133, 133);
+    border-radius: 3px;
+    color: transparent;
+}
+/*style for unchecked state
+Set the content to have no issues with moving elements when switching between states – the content is hidden, but save space for it.
+*/
+.bigcheckbox input[type="checkbox"]:not(:checked) + label:before {
+    content: "ON";
+    color: transparent;
+    display: inline-block;
+}
+/*style for checked state*/
+.bigcheckbox input[type="checkbox"]:checked + label:before {
+    font-family: 'FontAwesome';
+    content: "\f199";
+    /*f14a code for Checkmark*/
+
+    color: Blue;
+    display: inline-block;
+}
+/*style for checked state*/
+.bigcheckbox input[type="checkbox"]:disabled:checked + label:before {
+    color: #8484ff;
+}
+/*styling disabled chheckbox*/
+.bigcheckbox input[type="checkbox"]:disabled + label {
+    border-color: rgba(118, 118, 118, 0.3);
+    opacity: 0.7;
+}
+/**/
+.bigcheckbox af|selectBooleanCheckbox::item-text {
+    margin: 0px 1px;
+    padding-right: 3px;
+    padding-left: 2px;
+    vertical-align: middle;
+    margin-left: 3px;
+    position: relative;
+    top: -1px;
+}
+/** set line hight to fit the bigger rectangle */
+.bigcheckbox af|selectBooleanCheckbox::content {
+    line-height: 19px;
+}
+/**-----------------------------------------------------------------------------*/
+/* BIGSWITCH */
+/**hide checkbox*/
+.bigswitch af|selectBooleanCheckbox::virtual-checkbox {
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+}
+/**/
+.bigswitch af|selectBooleanCheckbox::item-text {
+    margin: 0px 1px;
+    padding-right: 3px;
+    padding-left: 2px;
+    vertical-align: middle;
+    margin-left: 1px;
+    position: relative;
+    top: -1px;
+}
+/** set line hight to fit the bigger rectangle */
+.bigswitch af|selectBooleanCheckbox::content {
+    line-height: 19px;
+}
+/*style label to display checkbox*/
+.bigswitch .p_OraHiddenLabel {
+    position: relative;
+    left: inherit;
+    font-size: 0px;
+    top: 4px;
+    content: "";
+    display: inline-block;
+    position: relative;
+    left: inherit;
+    margin-left: 0px;
+    border-radius: 3px;
+    color: transparent;
+}
+/*style label to display checkbox*/
+.bigswitchxx .p_OraHiddenLabel {
+    position: relative;
+    left: inherit;
+    font-size: 12px;
+    top: inherit;
+    content: "";
+    display: inline-block;
+    position: relative;
+    left: inherit;
+    margin-left: 0px;
+    width: 0px;
+    border-color: Black;
+}
+
+.bigswitch input[type="checkbox"] {
+    display: none;
+}
+
+.bigswitch input[type="checkbox"] + label {
+    position: relative;
+    display: inline-flex;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 0px;
+    color: transparent;
+}
+
+.bigswitch input[type="checkbox"] + label:before {
+    width: 25px;
+    height: 15px;
+    border-radius: 15px;
+    border: 2px solid #ddd;
+    background-color: #EEE;
+    content: "";
+    margin-right: 5px;
+    transition: background-color 0.5s linear;
+}
+
+.bigswitch input[type="checkbox"] + label:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: #fff;
+    content: "";
+    transition: margin 0.1s linear;
+    box-shadow: 0px 0px 5px #aaa;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+}
+/*styling disabled chheckbox*/
+.bigswitch input[type="checkbox"]:disabled + label {
+    border-color: Black;
+    color: #add8e6;
+    opacity: 0.5;
+}
+
+.bigswitch input[type="checkbox"]:checked + label:before {
+    background-color: #2b8718;
+}
+
+.bigswitch input[type="checkbox"]:checked + label:after {
+    margin: 0 0 0 15px;
+}
