@@ -16,9 +16,9 @@
                         <af:panelGroupLayout id="pgl2" width="400px" layout="vertical">
                             <af:panelBox text="af:outputText" id="pb1">
                                 <af:panelGroupLayout id="pgl3" layout="vertical">
-                                    <af:outputText value="icon before the text" id="ot2" styleClass="ambulanz_before"
+                                    <af:outputText value="icon before the text" id="ot2" styleClass="ambulance_before"
                                                    inlineStyle="font-size:x-large;"/>
-                                    <af:outputText value="icon after hhe text" id="ot3" styleClass="ambulanz_after"
+                                    <af:outputText value="icon after the text" id="ot3" styleClass="ambulance_after"
                                                    inlineStyle="font-size:x-large;"/>
                                 </af:panelGroupLayout>
                                 <f:facet name="toolbar"/>
@@ -29,6 +29,11 @@
                                                inlineStyle="font-size:x-large;" icon="/images/small-gear.png"/>
                                     <af:button text="mail_before_icon" id="b2" styleClass="mail_before_icon"
                                                inlineStyle="font-size:x-large;" icon="/images/small-gear.png"/>
+                                    <af:button text="mail_after_test" id="b3" styleClass="mail_after_text"
+                                               icon="/images/small-gear.png" inlineStyle="font-size:x-large;"/>
+                                    <af:button text="mail_before_and_after" id="b4"
+                                               styleClass="mail_before_text mail_after_text"
+                                               inlineStyle="font-size:x-large;"/>
                                 </af:panelGroupLayout>
                                 <f:facet name="toolbar"/>
                             </af:panelBox>
@@ -48,23 +53,27 @@
                             <af:panelBox text="af:icon" id="pb3">
                                 <af:panelGroupLayout id="pgl6" layout="vertical">
                                     <af:panelLabelAndMessage label="af:icon with icon before" id="plam1">
-                                        <af:icon id="i1" styleClass="ambulanz_before" name="error"/>
+                                        <af:icon id="i1" styleClass="ambulance_before" name="error"/>
                                     </af:panelLabelAndMessage>
                                     <af:panelLabelAndMessage label="af:icon with icon after" id="plam2">
-                                        <af:icon id="i2" styleClass="ambulanz_after" name="error"/>
+                                        <af:icon id="i2" styleClass="ambulance_after" name="error"/>
+                                    </af:panelLabelAndMessage>
+                                    <af:panelLabelAndMessage label="af:icon without default icon" id="plam3">
+                                        <af:icon id="i3" styleClass="mail_before"
+                                                 inlineStyle="color:Red; font-size:large;"/>
                                     </af:panelLabelAndMessage>
                                 </af:panelGroupLayout>
                                 <f:facet name="toolbar"/>
                             </af:panelBox>
                             <af:panelBox text="af:link" id="pb4">
                                 <af:panelGroupLayout id="pgl5" layout="vertical">
-                                    <af:link text="this is a link (icon before)" id="l1" styleClass="ambulanz_before"/>
-                                    <af:link text="this is a link (Icon after)" id="l2" styleClass="ambulanz_after"/>
+                                    <af:link text="this is a link (icon before)" id="l1" styleClass="ambulance_before"/>
+                                    <af:link text="this is a link (Icon after)" id="l2" styleClass="ambulance_after"/>
                                 </af:panelGroupLayout>
                                 <f:facet name="toolbar"/>
                             </af:panelBox>
-                            <af:panelBox text="af:panelBox with special disclose/undisclose icon" id="pb5"
-                                         styleClass="ambulanz_before_x">
+                            <af:panelBox text="af:panelBox with special disclosed/undisclosed icon" id="pb5"
+                                         styleClass="ambulance_before_x myfa_undisclosed myfa_disclosed">
                                 <f:facet name="toolbar"/>
                                 <af:panelGroupLayout id="pgl8">
                                     <af:outputText value="outputText1" id="ot4"/>

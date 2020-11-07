@@ -25,46 +25,46 @@
     font-style: normal;
 }
 
-.ambulanz_before:before {
+.ambulance_before:before {
     content: "\f0f9";
     font-family: FontAwesome;
     padding-right: 5px;
 }
 
-.ambulanz_before_x af|panelBox::header-element:before {
+.ambulance_after:after {
+    content: "\f0f9";
+    font-family: FontAwesome;
+    padding-left: 5px;
+}
+
+.ambulance_before_x af|panelBox::header-element:before {
     content: "\f0f9";
     font-family: FontAwesome;
     padding-right: 5px;
 }
 
-.ambulanz_before_x af|panelBox::undisclosed-icon-style {
+.myfa_undisclosed af|panelBox::undisclosed-icon-style {
     width: 0;
     height: 0;
     display: inline-block;
 }
 
-.ambulanz_before_x af|panelBox::undisclosed-icon-style:after {
+.myfa_undisclosed af|panelBox::undisclosed-icon-style:after {
     content: "\f101";
     font-family: FontAwesome;
     padding-right: 5px;
 }
 
-.ambulanz_before_x af|panelBox::disclosed-icon-style {
+.myfa_disclosed af|panelBox::disclosed-icon-style {
     width: 0;
     height: 0;
     display: inline-block;
 }
 
-.ambulanz_before_x af|panelBox::disclosed-icon-style:after {
+.myfa_disclosed af|panelBox::disclosed-icon-style:after {
     content: "\f103";
     font-family: FontAwesome;
     padding-right: 5px;
-}
-
-.ambulanz_after:after {
-    content: "\f0f9";
-    font-family: FontAwesome;
-    padding-left: 5px;
 }
 
 .mail_before:before {
@@ -89,6 +89,12 @@
     content: "\f199";
     font-family: FontAwesome;
     padding-right: 5px;
+}
+
+.mail_after_text af|button::text:after {
+    content: "\f199";
+    font-family: FontAwesome;
+    padding-left: 5px;
 }
 /*------------------------------------------------------*/
 /* BIGCHECKBOX */
