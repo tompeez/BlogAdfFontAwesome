@@ -29,7 +29,7 @@
                                                inlineStyle="font-size:x-large;" icon="/images/small-gear.png"/>
                                     <af:button text="mail_before_icon" id="b2" styleClass="mail_before_icon"
                                                inlineStyle="font-size:x-large;" icon="/images/small-gear.png"/>
-                                    <af:button text="mail_after_test" id="b3" styleClass="mail_after_text"
+                                    <af:button text="mail_after_text" id="b3" styleClass="mail_after_text"
                                                icon="/images/small-gear.png" inlineStyle="font-size:x-large;"/>
                                     <af:button text="mail_before_and_after" id="b4"
                                                styleClass="mail_before_text mail_after_text"
