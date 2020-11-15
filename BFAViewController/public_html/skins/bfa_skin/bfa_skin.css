@@ -25,6 +25,26 @@
     font-style: normal;
 }
 
+.abc af|button::link:hover:before {
+    content: "\f205";
+    font-family: FontAwesome;
+    text-align: center;
+    font-size: xx-large;
+    color: blue;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.abc af|button::link:before {
+    content: "\f204";
+    font-family: FontAwesome;
+    text-align: center;
+    font-size: xx-large;
+    color: blue;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
 .ambulance_before:before {
     content: "\f0f9";
     font-family: FontAwesome;

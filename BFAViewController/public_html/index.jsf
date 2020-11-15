@@ -34,6 +34,7 @@
                                     <af:button text="mail_before_and_after" id="b4"
                                                styleClass="mail_before_text mail_after_text"
                                                inlineStyle="font-size:x-large;"/>
+                                    <af:button text="button 1" id="b5" styleClass="abc"/>
                                 </af:panelGroupLayout>
                                 <f:facet name="toolbar"/>
                             </af:panelBox>
