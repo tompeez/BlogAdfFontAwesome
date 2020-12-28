@@ -80,6 +80,24 @@
                                     <af:outputText value="outputText1" id="ot4"/>
                                 </af:panelGroupLayout>
                             </af:panelBox>
+                            <af:panelBox text="SelectBooleanRadio" id="pb7">
+                                <af:selectBooleanRadio text="selectBooleanRadio 1" styleClass="bigswitchradio"
+                                                       label="Label 1" id="sbr1" group="a"/>
+                                <af:selectBooleanRadio text="selectBooleanRadio 2" label="Label 2" id="sbr2"
+                                                       styleClass="bigswitchradio" group="a"/>
+                                <af:selectBooleanRadio text="selectBooleanRadio 3" label="Label 3" id="sbr3"
+                                                       styleClass="bigswitchradio" group="a"/>
+                                <f:facet name="toolbar"/>
+                            </af:panelBox>
+                            <af:panelBox text="SelectBooleanRadio 2" id="pb8">
+                                <af:selectBooleanRadio text="selectBooleanRadio 1" styleClass="bigRadio" label="Label 1"
+                                                       id="sbr4" group="b"/>
+                                <af:selectBooleanRadio text="selectBooleanRadio 2" label="Label 2" id="sbr5"
+                                                       styleClass="bigRadio" group="b"/>
+                                <af:selectBooleanRadio text="selectBooleanRadio 3" label="Label 3" id="sbr6"
+                                                       styleClass="bigRadio" group="b"/>
+                                <f:facet name="toolbar"/>
+                            </af:panelBox>
                         </af:panelGroupLayout>
                     </af:gridCell>
                 </af:gridRow>
